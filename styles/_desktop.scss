@@ -1,0 +1,24 @@
+@mixin desktopStyle {
+  #mobile-nav {
+    display: none;
+  }
+
+  #home-section {
+    & #home-image-container {
+      @include flexCenter;
+    }
+
+    & img {
+      width: 450px;
+      height: auto;
+    }
+  }
+
+  .body-copy {
+    font-size: 16px;
+    line-height: 1.8;
+    text-overflow: ellipsis;
+    max-width: 500px;
+    color: $white;
+  }
+}

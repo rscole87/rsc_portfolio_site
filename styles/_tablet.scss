@@ -1,0 +1,29 @@
+@mixin tabletStyle {
+  #mobile-nav {
+    display: none;
+  }
+
+  #home-section {
+    & #home-image-container {
+      @include flexCenter;
+    }
+
+    & img {
+      width: 350px;
+      height: auto;
+    }
+  }
+
+  .heading-div {
+    & h3.heading-medium {
+      font-size: 36px;
+      letter-spacing: 8px;
+    }
+  }
+
+  .body-copy {
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,53 @@
+@mixin montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+@mixin flexContainer {
+  display: flex;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin fullHero {
+  height: 100vh;
+}
+
+@mixin halfHero {
+  min-height: 50vh;
+}
+
+@mixin flexHero {
+  min-height: 100vh;
+}
+
+@mixin formInput {
+  & input[type="text"] {
+    @include montserrat;
+    background-color: $midnightBlue;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px $lightBlue;
+  }
+
+  & textarea {
+    @include montserrat;
+    width: 100%;
+    height: 150px;
+    margin: 8px 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px $lightBlue;
+    background-color: $midnightBlue;
+    resize: none;
+  }
+}
