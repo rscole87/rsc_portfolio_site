@@ -152,45 +152,52 @@ html {
 #about-section {
   background-color: $midnightBlue;
 
-  & .pull-quote {
-    @include flexCenter;
-    @include raleway;
-    margin: 50px 0 0 0;
-    font-size: 20px;
-    font-weight: 800;
-    color: $mediumBlue;
-  }
-
-  & #about-text {
-    @include flexCenter;
-    text-align: center;
-  }
-
-  & .stack-icon {
-    max-width: 100px;
-  }
-
-  & #stack-div {
-    & h2 {
-      text-align: center;
-      color: $mediumBlue;
-      padding-top: 50px;
-      margin: 0px;
-      margin-bottom: 50px;
-      font-size: 20px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 12px;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-    }
-  }
-
-  & #stack-icon-div {
+  & div.wrapper {
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 30px;
+    flex-direction: column;
+    justify-content: center;
+
+    & .pull-quote {
+      @include flexCenter;
+      @include raleway;
+      margin: 50px 0 0 0;
+      font-size: 20px;
+      font-weight: 800;
+      color: $mediumBlue;
+    }
+
+    & #about-text {
+      @include flexCenter;
+      text-align: center;
+    }
+
+    & .stack-icon {
+      max-width: 80px;
+    }
+
+    & #stack-div {
+      & h2 {
+        text-align: center;
+        color: $mediumBlue;
+        padding-top: 50px;
+        margin: 0px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 12px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+    }
+
+    & #stack-icon-div {
+      padding: 0 20%;
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 30px;
+    }
   }
 }
 

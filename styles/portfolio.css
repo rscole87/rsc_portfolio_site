@@ -206,7 +206,20 @@ html {
   background-color: #124663;
 }
 
-#about-section .pull-quote {
+#about-section div.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about-section div.wrapper .pull-quote {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,7 +233,7 @@ html {
   color: #4588A5;
 }
 
-#about-section #about-text {
+#about-section div.wrapper #about-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,11 +243,11 @@ html {
   text-align: center;
 }
 
-#about-section .stack-icon {
-  max-width: 100px;
+#about-section div.wrapper .stack-icon {
+  max-width: 80px;
 }
 
-#about-section #stack-div h2 {
+#about-section div.wrapper #stack-div h2 {
   text-align: center;
   color: #4588A5;
   padding-top: 50px;
@@ -249,7 +262,8 @@ html {
   appearance: none;
 }
 
-#about-section #stack-icon-div {
+#about-section div.wrapper #stack-icon-div {
+  padding: 0 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
