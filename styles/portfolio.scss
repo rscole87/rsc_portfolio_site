@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 @import "./variables";
 @import "./mixins";
 @import "./mobile";
@@ -8,7 +9,7 @@
 
 body {
   margin: 0px;
-  @include montserrat;
+  @include opensans;
 }
 
 html {
@@ -83,11 +84,12 @@ html {
   //   margin-left: 5%;
 
   & h3.heading-medium {
+    // @include raleway;
     color: $lightBlue;
     padding-top: 50px;
     margin: 0px;
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 10px;
     -webkit-appearance: none;
@@ -150,8 +152,18 @@ html {
 #about-section {
   background-color: $midnightBlue;
 
+  & .pull-quote {
+    @include flexCenter;
+    @include raleway;
+    margin: 50px 0 0 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: $mediumBlue;
+  }
+
   & #about-text {
     @include flexCenter;
+    text-align: center;
   }
 
   & .stack-icon {
@@ -164,7 +176,7 @@ html {
       color: $mediumBlue;
       padding-top: 50px;
       margin: 0px;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
       font-size: 20px;
       font-weight: 400;
       text-transform: uppercase;
@@ -215,7 +227,7 @@ html {
 #contact-section {
   background-color: $mediumBlue;
   & ::placeholder {
-    @include montserrat;
+    @include opensans;
     color: $white;
   }
 
@@ -379,7 +391,7 @@ footer {
   }
 
   & .social-media-icon {
-    max-width: 80px;
+    max-width: 65px;
   }
 }
 

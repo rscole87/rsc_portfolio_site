@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 #project1 {
   background-image: url(../images/projects/base_apparel.png);
   background-size: cover;
@@ -41,7 +42,7 @@
 
 body {
   margin: 0px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 html {
@@ -143,7 +144,7 @@ html {
   padding-top: 50px;
   margin: 0px;
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 10px;
   -webkit-appearance: none;
@@ -205,6 +206,20 @@ html {
   background-color: #124663;
 }
 
+#about-section .pull-quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Raleway", sans-serif;
+  margin: 50px 0 0 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #4588A5;
+}
+
 #about-section #about-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,6 +227,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 #about-section .stack-icon {
@@ -223,7 +239,7 @@ html {
   color: #4588A5;
   padding-top: 50px;
   margin: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
@@ -289,22 +305,22 @@ html {
 }
 
 #contact-section ::-webkit-input-placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #FFFEFD;
 }
 
 #contact-section :-ms-input-placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #FFFEFD;
 }
 
 #contact-section ::-ms-input-placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #FFFEFD;
 }
 
 #contact-section ::placeholder {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #FFFEFD;
 }
 
@@ -326,7 +342,7 @@ html {
 }
 
 #contact-section #form-div form input[type="text"] {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #124663;
   width: 100%;
   padding: 12px 20px;
@@ -337,7 +353,7 @@ html {
 }
 
 #contact-section #form-div form textarea {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   height: 150px;
   margin: 8px 0;
@@ -506,7 +522,7 @@ footer .footer-menu li a {
 }
 
 footer .social-media-icon {
-  max-width: 80px;
+  max-width: 65px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -639,7 +655,7 @@ footer .social-media-icon {
     padding-right: 15px;
   }
   footer #footer-container .social-media-icon {
-    max-width: 50px;
+    max-width: 40px;
   }
 }
 
