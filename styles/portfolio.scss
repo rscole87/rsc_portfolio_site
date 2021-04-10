@@ -161,7 +161,6 @@ html {
       @include flexCenter;
       @include raleway;
       margin: 50px 0 0 0;
-      font-size: 20px;
       font-weight: 800;
       color: $mediumBlue;
     }
@@ -169,10 +168,6 @@ html {
     & #about-text {
       @include flexCenter;
       text-align: center;
-    }
-
-    & .stack-icon {
-      max-width: 80px;
     }
 
     & #stack-div {
@@ -214,6 +209,7 @@ html {
   margin: 10px;
   box-shadow: 2px 2px 10px 2px #00000077;
   transition: 0.5s;
+  border-radius: 5px;
 }
 
 .project-thumb:hover {
@@ -308,6 +304,7 @@ html {
   margin: 2% auto;
   padding: 20px;
   border: 1px solid $lightBlue;
+  border-radius: 5px;
   width: 75%; /* Could be more or less, depending on screen size */
   height: auto;
 

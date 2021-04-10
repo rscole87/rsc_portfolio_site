@@ -26,4 +26,14 @@
     line-height: 1.8;
     max-width: 400px;
   }
+
+  #about-section {
+    & .pull-quote {
+      font-size: 18px;
+    }
+
+    & .stack-icon {
+      max-width: 60px;
+    }
+  }
 }

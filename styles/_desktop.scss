@@ -21,4 +21,14 @@
     max-width: 500px;
     color: $white;
   }
+
+  #about-section {
+    & .pull-quote {
+      font-size: 20px;
+    }
+
+    & .stack-icon {
+      max-width: 70px;
+    }
+  }
 }
