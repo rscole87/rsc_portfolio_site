@@ -97,16 +97,23 @@
                 </div>
             </div>
 
-            <div id="projects-grid">
-                <div id="project1" class="project-thumb"></div>
-                <div id="project2" class="project-thumb"></div>
-                <div id="project3" class="project-thumb"></div>
-                <div id="project4" class="project-thumb"></div>
-                <div id="project5" class="project-thumb"></div>
-                <div id="project6" class="project-thumb"></div>
-            </div>
-
+            <div id="projects-grid"></div>
         </section>
+
+        <template id="project-thumb-template">
+            <div project-id class="project-thumb"></div>
+        </template>
+
+        <template id="project-template">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4 class="project-name" project-name></h4>
+                <p class="project-description" project-description></p>
+                <div>
+                    <img class="project-img" src="" alt="" project-img>
+                </div>
+            </div>
+        </template>
 
         <section id="contact-section" class="half-hero">
             <div class="wrapper">
@@ -177,7 +184,8 @@
             </div>
         </footer>
 
-        <script src="./scripts/portfolio.js" async></script>
+        <script src="./scripts/portfolio.js" type="module" async></script>
+        <script src="projectList.js" type="module"></script>
         <script src="./scripts/Contact.js" async></script>
         
     </body>
