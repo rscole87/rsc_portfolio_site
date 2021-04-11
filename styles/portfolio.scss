@@ -79,23 +79,8 @@ html {
 }
 
 .heading-div {
-  // @include flexCenter;
+  @include sectionHeading;
   padding-top: 30px;
-  //   margin-left: 5%;
-
-  & h3.heading-medium {
-    // @include raleway;
-    color: $lightBlue;
-    padding-top: 50px;
-    margin: 0px;
-    font-size: 50px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
 }
 
 #home-section {
@@ -170,22 +155,22 @@ html {
       text-align: center;
     }
 
-    & #stack-div {
-      & h2 {
-        text-align: center;
-        color: $mediumBlue;
-        padding-top: 50px;
-        margin: 0px;
-        margin-bottom: 50px;
-        font-size: 20px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 12px;
-        // -webkit-appearance: none;
-        // -moz-appearance: none;
-        appearance: none;
-      }
-    }
+    // & #stack-div {
+    //   & h2 {
+    //     text-align: center;
+    //     color: $mediumBlue;
+    //     padding-top: 50px;
+    //     margin: 0px;
+    //     margin-bottom: 50px;
+    //     font-size: 20px;
+    //     font-weight: 400;
+    //     text-transform: uppercase;
+    //     letter-spacing: 12px;
+    //     // -webkit-appearance: none;
+    //     // -moz-appearance: none;
+    //     appearance: none;
+    //   }
+    // }
 
     & #stack-icon-div {
       max-height: 10vh;

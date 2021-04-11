@@ -27,6 +27,16 @@
       font-size: 20px;
     }
 
+    & div.wrapper {
+      & #stack-div {
+        & h2 {
+          @include heading;
+          text-align: center;
+          color: $mediumBlue;
+        }
+      }
+    }
+
     & .stack-icon {
       max-width: 70px;
     }

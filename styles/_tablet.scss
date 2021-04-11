@@ -32,6 +32,18 @@
       font-size: 18px;
     }
 
+    & div.wrapper {
+      & #stack-div {
+        & h2 {
+          text-align: center;
+          @include heading;
+          color: $mediumBlue;
+          font-size: 30px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
     & .stack-icon {
       max-width: 60px;
     }

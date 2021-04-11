@@ -136,20 +136,17 @@ html {
 }
 
 .heading-div {
-  padding-top: 30px;
-}
-
-.heading-div h3.heading-medium {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 10px;
   color: #CDEEFF;
   padding-top: 50px;
   margin: 0px;
   font-size: 50px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding-top: 30px;
 }
 
 #home-section {
@@ -240,21 +237,6 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-}
-
-#about-section div.wrapper #stack-div h2 {
-  text-align: center;
-  color: #4588A5;
-  padding-top: 50px;
-  margin: 0px;
-  margin-bottom: 50px;
-  font-size: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 12px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 
 #about-section div.wrapper #stack-icon-div {
@@ -614,6 +596,15 @@ footer .social-media-icon {
     font-size: 16px;
     color: white;
   }
+  #about-section div.wrapper #stack-div h2 {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #4588A5;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
   #about-section .stack-icon {
     max-width: 50px;
   }
@@ -703,6 +694,15 @@ footer .social-media-icon {
   #about-section .pull-quote {
     font-size: 18px;
   }
+  #about-section div.wrapper #stack-div h2 {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #4588A5;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
   #about-section .stack-icon {
     max-width: 60px;
   }
@@ -733,6 +733,13 @@ footer .social-media-icon {
   }
   #about-section .pull-quote {
     font-size: 20px;
+  }
+  #about-section div.wrapper #stack-div h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    color: #4588A5;
   }
   #about-section .stack-icon {
     max-width: 70px;

@@ -85,6 +85,18 @@
       color: white;
     }
 
+    & div.wrapper {
+      & #stack-div {
+        & h2 {
+          text-align: center;
+          @include heading;
+          color: $mediumBlue;
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
     & .stack-icon {
       max-width: 50px;
     }

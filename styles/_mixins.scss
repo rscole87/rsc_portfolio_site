@@ -15,6 +15,23 @@
   justify-content: center;
 }
 
+@mixin heading {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+@mixin sectionHeading {
+  @include heading;
+  color: $lightBlue;
+  padding-top: 50px;
+  margin: 0px;
+  font-size: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 @mixin flexRow {
   display: flex;
   flex-direction: row;
