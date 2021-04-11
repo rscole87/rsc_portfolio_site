@@ -181,13 +181,14 @@ html {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 12px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
+        // -webkit-appearance: none;
+        // -moz-appearance: none;
         appearance: none;
       }
     }
 
     & #stack-icon-div {
+      max-height: 10vh;
       padding: 0 20%;
       display: flex;
       justify-content: space-around;
