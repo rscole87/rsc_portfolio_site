@@ -34,7 +34,7 @@
 
     & div.wrapper {
       & #stack-div {
-        border-radius: 20px;
+        border-radius: 50px;
         position: relative;
         top: 100px;
 
@@ -54,6 +54,26 @@
   }
 
   #projects-section {
+    padding-top: 100px;
+
+    & #call-to-action-div {
+      background-color: $mediumBlue;
+      border-radius: 50px;
+      position: relative;
+      top: 100px;
+
+      & h2 {
+        @include heading;
+        color: $lightBlue;
+        text-align: center;
+        padding: 25px;
+        margin: 0;
+        font-size: 30px;
+      }
+    }
+  }
+
+  #contact-section {
     padding-top: 100px;
   }
 }

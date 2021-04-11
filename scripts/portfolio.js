@@ -1,7 +1,4 @@
 import projectList from "./projectList.js"
-let contactForm = document.getElementById("contact-form")
-let inquiries = []
-let submissionModal = document.getElementById("submission-modal")
 let projectsDiv = document.getElementById("projects-div")
 let projectsGrid = document.getElementById("projects-grid")
 let mobileMenuBttn = document.getElementById("menu-button")
@@ -10,20 +7,6 @@ let closeBttns = document.getElementsByClassName("close")
 let projectThumbs = document.getElementsByClassName("project-thumb")
 let projectTemplate = document.getElementById("project-template")
 let projectThumbTemplate = document.getElementById("project-thumb-template")
-
-contactForm.onsubmit = function (e) {
-  e.preventDefault()
-  let fName = contactForm.f_name.value
-  let lName = contactForm.l_name.value
-  let email = contactForm.email.value
-  let message = contactForm.message.value
-  let userContact = new Contact(fName, lName, email, message)
-  inquiries.push(userContact)
-  inquiries.forEach((inquiry) => inquiry.printContact())
-  contactForm.reset()
-  submissionModal.style.display = "block"
-  return userContact
-}
 
 const closeModal = (e) => {
   if (e.target.parentElement.parentElement.classList.contains("modal")) {

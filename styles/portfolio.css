@@ -241,6 +241,7 @@ html {
 
 #about-section div.wrapper #stack-div {
   background-color: #4588A5;
+  border: 5px solid #1F5F82;
 }
 
 #about-section div.wrapper #stack-icon-div {
@@ -257,6 +258,28 @@ html {
 #projects-section {
   background-color: #1F5F82;
   padding-bottom: 30px;
+}
+
+#projects-section #call-to-action-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px solid #124663;
+}
+
+#projects-section #call-to-action-div .body-copy {
+  margin: 0 auto;
+  text-align: center;
+  color: #CDEEFF;
+  max-width: 80%;
+  padding: 0 0 30px 0;
 }
 
 .project-thumb {
@@ -291,102 +314,13 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: #124663;
   padding: 10px;
   margin-top: 30px;
 }
 
 #contact-section {
-  background-color: #4588A5;
-  padding-bottom: 150px;
-}
-
-#contact-section ::-webkit-input-placeholder {
-  font-family: "Open Sans", sans-serif;
-  color: #FFFEFD;
-}
-
-#contact-section :-ms-input-placeholder {
-  font-family: "Open Sans", sans-serif;
-  color: #FFFEFD;
-}
-
-#contact-section ::-ms-input-placeholder {
-  font-family: "Open Sans", sans-serif;
-  color: #FFFEFD;
-}
-
-#contact-section ::placeholder {
-  font-family: "Open Sans", sans-serif;
-  color: #FFFEFD;
-}
-
-#contact-section #form-div {
-  margin: 30px auto 0px auto;
-}
-
-#contact-section #form-div .input-div {
-  width: 800px;
-  max-width: 100%;
-}
-
-#contact-section #form-div form {
-  background-color: #1F5F82;
-  padding: 10px;
-  margin: 0 auto;
-  width: 70%;
-  max-width: 700px;
-}
-
-#contact-section #form-div form input[type="text"] {
-  font-family: "Open Sans", sans-serif;
   background-color: #124663;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px #CDEEFF;
-}
-
-#contact-section #form-div form textarea {
-  font-family: "Open Sans", sans-serif;
-  width: 100%;
-  height: 150px;
-  margin: 8px 0;
-  padding: 12px 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px #CDEEFF;
-  background-color: #124663;
-  resize: none;
-}
-
-#contact-section #form-div form #submit-bttn-div {
-  margin: 0 auto;
-  width: 50%;
-}
-
-#contact-section #form-div #submit {
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #CDEEFF;
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
-  -webkit-box-shadow: 0px 4px #124663;
-          box-shadow: 0px 4px #124663;
-  padding: 5px;
-  width: 100%;
-  border: 1px solid #CDEEFF;
-  background-color: transparent;
-}
-
-#contact-section #form-div #submit:hover {
-  color: #4588A5;
-  background: #CDEEFF;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  padding-bottom: 50px;
 }
 
 .modal {
@@ -482,17 +416,24 @@ footer {
 }
 
 footer #footer-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 
 footer #footer-container div.three-col {
+  -webkit-box-flex: 33.3%;
+      -ms-flex: 33.3%;
+          flex: 33.3%;
   max-width: 33.3%;
   min-height: 200px;
   -webkit-box-flex: 1;
@@ -601,7 +542,7 @@ footer .social-media-icon {
     color: white;
   }
   #about-section div.wrapper #stack-div {
-    border-radius: 15px;
+    border-radius: 30px;
     position: relative;
     top: 60px;
   }
@@ -626,6 +567,22 @@ footer .social-media-icon {
   #projects-section {
     padding-top: 30px;
   }
+  #projects-section #call-to-action-div {
+    background-color: #4588A5;
+    border-radius: 30px;
+    position: relative;
+    top: 100px;
+  }
+  #projects-section #call-to-action-div h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #CDEEFF;
+    text-align: center;
+    padding: 25px;
+    margin: 0;
+    font-size: 20px;
+  }
   #projects-grid {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -649,7 +606,7 @@ footer .social-media-icon {
     max-width: 300px;
   }
   #contact-section {
-    padding-bottom: 100px;
+    padding: 50px 0px 100px 0px;
   }
   #contact-section #form-div form {
     width: 93%;
@@ -707,7 +664,7 @@ footer .social-media-icon {
     font-size: 18px;
   }
   #about-section div.wrapper #stack-div {
-    border-radius: 20px;
+    border-radius: 50px;
     position: relative;
     top: 100px;
   }
@@ -724,6 +681,25 @@ footer .social-media-icon {
     max-width: 60px;
   }
   #projects-section {
+    padding-top: 100px;
+  }
+  #projects-section #call-to-action-div {
+    background-color: #4588A5;
+    border-radius: 50px;
+    position: relative;
+    top: 100px;
+  }
+  #projects-section #call-to-action-div h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #CDEEFF;
+    text-align: center;
+    padding: 25px;
+    margin: 0;
+    font-size: 30px;
+  }
+  #contact-section {
     padding-top: 100px;
   }
 }
@@ -755,7 +731,7 @@ footer .social-media-icon {
     font-size: 20px;
   }
   #about-section div.wrapper #stack-div {
-    border-radius: 20px;
+    border-radius: 50px;
     position: relative;
     top: 100px;
   }
@@ -770,6 +746,24 @@ footer .social-media-icon {
     max-width: 70px;
   }
   #projects-section {
+    padding-top: 100px;
+  }
+  #projects-section #call-to-action-div {
+    background-color: #4588A5;
+    border-radius: 50px;
+    position: relative;
+    top: 100px;
+  }
+  #projects-section #call-to-action-div h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #CDEEFF;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+  }
+  #contact-section {
     padding-top: 100px;
   }
 }
