@@ -239,6 +239,10 @@ html {
   text-align: center;
 }
 
+#about-section div.wrapper #stack-div {
+  background-color: #4588A5;
+}
+
 #about-section div.wrapper #stack-icon-div {
   max-height: 10vh;
   padding: 0 20%;
@@ -596,12 +600,17 @@ footer .social-media-icon {
     font-size: 16px;
     color: white;
   }
+  #about-section div.wrapper #stack-div {
+    border-radius: 15px;
+    position: relative;
+    top: 60px;
+  }
   #about-section div.wrapper #stack-div h2 {
     text-align: center;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 10px;
-    color: #4588A5;
+    color: #CDEEFF;
     font-size: 20px;
     margin-bottom: 15px;
   }
@@ -613,6 +622,9 @@ footer .social-media-icon {
     font-size: 20px;
     letter-spacing: 5px;
     margin-bottom: 10px;
+  }
+  #projects-section {
+    padding-top: 30px;
   }
   #projects-grid {
     -webkit-box-pack: center;
@@ -694,17 +706,25 @@ footer .social-media-icon {
   #about-section .pull-quote {
     font-size: 18px;
   }
+  #about-section div.wrapper #stack-div {
+    border-radius: 20px;
+    position: relative;
+    top: 100px;
+  }
   #about-section div.wrapper #stack-div h2 {
     text-align: center;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 10px;
-    color: #4588A5;
+    color: #CDEEFF;
     font-size: 30px;
     margin-bottom: 30px;
   }
   #about-section .stack-icon {
     max-width: 60px;
+  }
+  #projects-section {
+    padding-top: 100px;
   }
 }
 
@@ -734,15 +754,23 @@ footer .social-media-icon {
   #about-section .pull-quote {
     font-size: 20px;
   }
+  #about-section div.wrapper #stack-div {
+    border-radius: 20px;
+    position: relative;
+    top: 100px;
+  }
   #about-section div.wrapper #stack-div h2 {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 10px;
     text-align: center;
-    color: #4588A5;
+    color: #CDEEFF;
   }
   #about-section .stack-icon {
     max-width: 70px;
+  }
+  #projects-section {
+    padding-top: 100px;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

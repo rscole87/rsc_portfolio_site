@@ -87,10 +87,14 @@
 
     & div.wrapper {
       & #stack-div {
+        border-radius: 15px;
+        position: relative;
+        top: 60px;
+
         & h2 {
           text-align: center;
           @include heading;
-          color: $mediumBlue;
+          color: $lightBlue;
           font-size: 20px;
           margin-bottom: 15px;
         }
@@ -109,6 +113,10 @@
       letter-spacing: 5px;
       margin-bottom: 10px;
     }
+  }
+
+  #projects-section {
+    padding-top: 30px;
   }
 
   #projects-grid {

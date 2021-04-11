@@ -155,22 +155,9 @@ html {
       text-align: center;
     }
 
-    // & #stack-div {
-    //   & h2 {
-    //     text-align: center;
-    //     color: $mediumBlue;
-    //     padding-top: 50px;
-    //     margin: 0px;
-    //     margin-bottom: 50px;
-    //     font-size: 20px;
-    //     font-weight: 400;
-    //     text-transform: uppercase;
-    //     letter-spacing: 12px;
-    //     // -webkit-appearance: none;
-    //     // -moz-appearance: none;
-    //     appearance: none;
-    //   }
-    // }
+    & #stack-div {
+      background-color: $mediumBlue;
+    }
 
     & #stack-icon-div {
       max-height: 10vh;

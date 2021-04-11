@@ -34,10 +34,14 @@
 
     & div.wrapper {
       & #stack-div {
+        border-radius: 20px;
+        position: relative;
+        top: 100px;
+
         & h2 {
           text-align: center;
           @include heading;
-          color: $mediumBlue;
+          color: $lightBlue;
           font-size: 30px;
           margin-bottom: 30px;
         }
@@ -47,5 +51,9 @@
     & .stack-icon {
       max-width: 60px;
     }
+  }
+
+  #projects-section {
+    padding-top: 100px;
   }
 }
