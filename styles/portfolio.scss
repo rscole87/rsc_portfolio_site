@@ -142,17 +142,15 @@ html {
     flex-direction: column;
     justify-content: center;
 
-    & .pull-quote {
-      @include flexCenter;
-      @include raleway;
-      margin: 50px 0 0 0;
-      font-weight: 800;
-      color: $mediumBlue;
+    & #about-content-div {
+      justify-content: center;
     }
 
-    & #about-text {
-      @include flexCenter;
-      text-align: center;
+    & .pull-quote {
+      @include raleway;
+      margin: 5px 0 0 0;
+      font-weight: 800;
+      color: $mediumBlue;
     }
 
     & #stack-div {

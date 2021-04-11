@@ -216,27 +216,17 @@ html {
           justify-content: center;
 }
 
-#about-section div.wrapper .pull-quote {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#about-section div.wrapper #about-content-div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Raleway", sans-serif;
-  margin: 50px 0 0 0;
-  font-weight: 800;
-  color: #4588A5;
 }
 
-#about-section div.wrapper #about-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+#about-section div.wrapper .pull-quote {
+  font-family: "Raleway", sans-serif;
+  margin: 5px 0 0 0;
+  font-weight: 800;
+  color: #4588A5;
 }
 
 #about-section div.wrapper #stack-div {
@@ -537,9 +527,46 @@ footer .social-media-icon {
     max-width: 200px;
     height: auto;
   }
-  #about-section .pull-quote {
-    font-size: 16px;
-    color: white;
+  #about-section #about-content-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about-section #about-content-div #headshot-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 5px 0 15px 0;
+  }
+  #about-section #about-content-div #headshot-div #headshot-img {
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 10px 2px #00000077;
+            box-shadow: 2px 2px 10px 2px #00000077;
+    max-height: 125px;
+  }
+  #about-section #about-content-div #about-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-left: 0px;
+  }
+  #about-section #about-content-div #about-text .pull-quote {
+    font-size: 18px;
   }
   #about-section div.wrapper #stack-div {
     border-radius: 30px;
@@ -660,8 +687,37 @@ footer .social-media-icon {
     line-height: 1.8;
     max-width: 400px;
   }
-  #about-section .pull-quote {
-    font-size: 18px;
+  #about-section #about-content-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #about-section #about-content-div #headshot-img {
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 10px 2px #00000077;
+            box-shadow: 2px 2px 10px 2px #00000077;
+    max-height: 250px;
+  }
+  #about-section #about-content-div #about-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    margin-left: 30px;
+  }
+  #about-section #about-content-div #about-text .pull-quote {
+    font-size: 23px;
   }
   #about-section div.wrapper #stack-div {
     border-radius: 50px;
@@ -727,8 +783,37 @@ footer .social-media-icon {
     max-width: 500px;
     color: #FFFEFD;
   }
-  #about-section .pull-quote {
-    font-size: 20px;
+  #about-section #about-content-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #about-section #about-content-div #headshot-img {
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 10px 2px #00000077;
+            box-shadow: 2px 2px 10px 2px #00000077;
+    max-height: 300px;
+  }
+  #about-section #about-content-div #about-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    margin-left: 50px;
+  }
+  #about-section #about-content-div #about-text .pull-quote {
+    font-size: 28px;
   }
   #about-section div.wrapper #stack-div {
     border-radius: 50px;

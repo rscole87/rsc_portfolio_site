@@ -28,8 +28,26 @@
   }
 
   #about-section {
-    & .pull-quote {
-      font-size: 18px;
+    & #about-content-div {
+      display: flex;
+      flex-direction: row;
+
+      & #headshot-img {
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px 2px #00000077;
+        max-height: 250px;
+      }
+
+      & #about-text {
+        @include flexCenter;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 30px;
+
+        & .pull-quote {
+          font-size: 23px;
+        }
+      }
     }
 
     & div.wrapper {
