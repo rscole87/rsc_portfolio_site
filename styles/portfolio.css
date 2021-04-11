@@ -450,10 +450,6 @@ footer .footer-menu li a {
   color: #4588A5;
 }
 
-footer .social-media-icon {
-  max-width: 65px;
-}
-
 @media only screen and (max-width: 500px) {
   #main-nav {
     display: none;
@@ -636,16 +632,30 @@ footer .social-media-icon {
     max-width: 300px;
   }
   #contact-section {
-    padding: 50px 0px 100px 0px;
+    padding: 30px 0px;
   }
-  #contact-section #form-div form {
-    width: 93%;
-    max-width: 100%;
-    padding: none;
+  #contact-section #contact-menu-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 20px 0 0 0;
   }
-  #contact-section #form-div form #submit-bttn-div {
-    margin: 0 auto;
+  #contact-section #contact-menu-div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #contact-section #contact-menu-div div .social-media-icon {
+    width: 60px;
   }
   footer {
     height: 15vh;
@@ -761,6 +771,29 @@ footer .social-media-icon {
   #contact-section {
     padding-top: 100px;
   }
+  #contact-section #contact-menu-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #contact-section #contact-menu-div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #contact-section #contact-menu-div div .social-media-icon {
+    width: 70px;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -853,6 +886,29 @@ footer .social-media-icon {
   }
   #contact-section {
     padding-top: 100px;
+  }
+  #contact-section #contact-menu-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #contact-section #contact-menu-div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #contact-section #contact-menu-div div .social-media-icon {
+    width: 80px;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
