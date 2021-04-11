@@ -209,16 +209,28 @@
     padding-top: 20px;
     padding-bottom: 30px;
 
-    & #footer-container {
-      & div.three-col {
-        max-width: 30%;
-        min-height: 200px;
-        flex-grow: 1;
-        padding-right: 15px;
+    & #footer-menu-div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    & #footer-menu {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      & li {
+        margin: 12px 0 0 0;
+        font-size: 12px;
       }
 
-      & .social-media-icon {
-        max-width: 40px;
+      & li a {
+        text-decoration: none;
+        color: $mediumBlue;
       }
     }
   }

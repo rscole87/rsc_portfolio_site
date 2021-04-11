@@ -297,21 +297,17 @@ html {
 footer {
   min-height: 25vh;
   align-items: center;
-  background-color: $midnightBlue;
+  background: linear-gradient($midnightBlue, rgb(15, 59, 83));
   padding-top: 30px;
 
   & #footer-container {
     flex-direction: row;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
 
-    & div.three-col {
-      flex: 33.3%;
-      max-width: 33.3%;
+    & div {
+      flex: 1;
       min-height: 200px;
-      flex-grow: 1;
-      padding-right: 20px;
     }
   }
 
@@ -322,14 +318,10 @@ footer {
     padding-top: 30px;
   }
 
-  & .footer-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    & li a {
-      text-decoration: none;
-      color: $mediumBlue;
+  & #footer-menu {
+    & li {
+      text-transform: uppercase;
+      letter-spacing: 4px;
     }
   }
 }

@@ -102,4 +102,28 @@
       }
     }
   }
+
+  & #footer-menu-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  & #footer-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & li {
+      margin: 0 0 0 30px;
+    }
+
+    & li a {
+      text-decoration: none;
+      color: $mediumBlue;
+    }
+  }
 }
