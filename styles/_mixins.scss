@@ -49,6 +49,28 @@
   min-height: 100vh;
 }
 
+@mixin bttnStyle {
+  button {
+    background-color: $lightBlue;
+    border: 1px solid $darkBlue;
+    border-radius: 5px;
+    cursor: pointer;
+    @include raleway;
+    color: $darkBlue;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px;
+    transition-duration: 300ms;
+  }
+
+  & button:hover {
+    background-color: $darkBlue;
+    border: 1px solid $lightBlue;
+    color: $lightBlue;
+  }
+}
+
 @mixin formInput {
   & input[type="text"] {
     @include opensans;

@@ -91,6 +91,28 @@
     }
   }
 
+  & .modal-content {
+    & .modal-column-container {
+      display: flex;
+      flex-direction: column;
+
+      & .modal-img-column {
+        flex: 2;
+      }
+
+      & .modal-description-column {
+        background-color: $mediumBlue;
+        border-radius: 5px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 12px 0 0 0;
+      }
+    }
+  }
+
   #contact-section {
     padding-top: 100px;
 

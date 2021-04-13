@@ -344,10 +344,12 @@ html {
   margin: 2% auto;
   padding: 20px;
   border: 1px solid #CDEEFF;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 75%;
   /* Could be more or less, depending on screen size */
   height: auto;
+  -webkit-box-shadow: 2px 2px 10px 2px #00000077;
+          box-shadow: 2px 2px 10px 2px #00000077;
 }
 
 .modal-content h4 {
@@ -358,7 +360,33 @@ html {
 }
 
 .modal-content img {
-  max-width: 90%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.modal-content .modal-description-column {
+  padding: 5%;
+}
+
+.modal-content button {
+  background-color: #CDEEFF;
+  border: 1px solid #1F5F82;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  color: #1F5F82;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 5px;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.modal-content button:hover {
+  background-color: #1F5F82;
+  border: 1px solid #CDEEFF;
+  color: #CDEEFF;
 }
 
 /* The Close Button */
@@ -611,7 +639,29 @@ footer #footer-menu li {
   }
   .modal-content {
     width: 80%;
+    min-height: 25%;
     margin: 25% auto;
+  }
+  .modal-content .modal-description-column {
+    background-color: #4588A5;
+    border-radius: 5px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px 0 0 0;
   }
   .body-copy {
     font-size: 14px;
@@ -779,6 +829,41 @@ footer #footer-menu li {
     margin: 0;
     font-size: 30px;
   }
+  .modal-content .modal-column-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal-content .modal-column-container .modal-img-column {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .modal-content .modal-column-container .modal-description-column {
+    background-color: #4588A5;
+    border-radius: 5px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 12px 0 0 0;
+  }
   #contact-section {
     padding-top: 100px;
   }
@@ -929,6 +1014,41 @@ footer #footer-menu li {
     text-align: center;
     margin: 0;
     font-size: 30px;
+  }
+  .modal-content .modal-column-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .modal-content .modal-column-container .modal-img-column {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  .modal-content .modal-column-container .modal-description-column {
+    background-color: #4588A5;
+    border-radius: 5px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 0 15px;
   }
   #contact-section {
     padding-top: 100px;
