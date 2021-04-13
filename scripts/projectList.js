@@ -2,7 +2,7 @@ const projectList = [
   {
     id: "project1",
     name: "Base Apparel",
-    description: "Landing page for a new clothing retailer.",
+    description: "Landing page for a new clothing retailer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: "../images/projects/base_apparel.png",
     // gitHub: ,
     // demo: ,
@@ -11,7 +11,7 @@ const projectList = [
   {
     id: "project2",
     name: "Intro Component",
-    description: "Registration form for online learning platform.",
+    description: "Registration form for online learning platform. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     image: "../images/projects/intro_component.png",
     // gitHub: ,
     // demo: ,
@@ -20,7 +20,7 @@ const projectList = [
   {
     id: "project3",
     name: "Bookmark Manager",
-    description: "Website for a bookmark management platform.",
+    description: "Website for a bookmark management platform Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     image: "../images/projects/bookmark_manager.png",
     // gitHub: ,
     // demo: ,
