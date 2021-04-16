@@ -368,7 +368,8 @@ html {
   padding: 5%;
 }
 
-.modal-content button {
+.modal-content a.code-bttn {
+  text-decoration: none;
   background-color: #CDEEFF;
   border: 1px solid #1F5F82;
   border-radius: 5px;
@@ -383,7 +384,7 @@ html {
           transition-duration: 300ms;
 }
 
-.modal-content button:hover {
+.modal-content a.code-bttn:hover {
   background-color: #1F5F82;
   border: 1px solid #CDEEFF;
   color: #CDEEFF;

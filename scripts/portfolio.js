@@ -47,6 +47,8 @@ const printProject = (project) => {
   projectClone.querySelector("[project-name]").innerText = project.name
   projectClone.querySelector("[project-description]").innerText = project.description
   projectClone.querySelector("[project-img]").src = project.image
+  projectClone.querySelector("[demo]").href = project.demo
+  projectClone.querySelector("[github]").href = project.github
   return projectClone
 }
 

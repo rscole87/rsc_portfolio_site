@@ -7,6 +7,7 @@
         <title>Rodrick Coleman | Web Developer</title>
         <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
         <link rel="stylesheet" href="./styles/portfolio.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 
     <body>
@@ -67,7 +68,7 @@
                 
 
                 <div id="about-content-div">
-                    <div id="headshot-div">
+                    <div id="headshot-div" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
                         <img id="headshot-img" src="./images/Rodrick-headshot.jpg" alt="">
                     </div>
 
@@ -82,7 +83,7 @@
                 </div>
                 
 
-                <div id="stack-div">
+                <div id="stack-div" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                     <h2 class="heading-medium">My Stack</h2>
                     <div id="stack-icon-div">
                         <img src="./images/html.svg" class="stack-icon" alt="HTML 5">
@@ -106,7 +107,7 @@
 
             <div id="projects-grid"></div>
 
-            <div id="call-to-action-div" class="wrapper">
+            <div id="call-to-action-div" class="wrapper" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
                 <h2 class="heading-medium">Like what you see?</h2>
                 <p class="body-copy">
                     Send me an email or feel free to connect with me via my social media links below. 
@@ -115,7 +116,7 @@
         </section>
 
         <template id="project-thumb-template">
-            <div project-id class="project-thumb"></div>
+            <div project-id class="project-thumb" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"></div>
         </template>
 
         <template id="project-template">
@@ -133,8 +134,8 @@
                         <p class="project-description" project-description></p>
     
                         <div class="modal-bttn-container">
-                            <button>Live Code</button>
-                            <button>Source Code</button>
+                            <a class="code-bttn" demo>Live Code</a>
+                            <a class="code-bttn" github>Source Code</a>
                         </div>
 
                     </div>
@@ -200,5 +201,9 @@
         </footer>
 
         <script src="./scripts/portfolio.js" type="module" async></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>
