@@ -260,6 +260,11 @@ html {
     border-radius: 5px;
   }
 
+  & video {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
   & .modal-description-column {
     padding: 5%;
   }

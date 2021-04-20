@@ -364,6 +364,11 @@ html {
   border-radius: 5px;
 }
 
+.modal-content video {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
 .modal-content .modal-description-column {
   padding: 5%;
 }
