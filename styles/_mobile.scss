@@ -38,11 +38,14 @@
   }
 
   #mobile-nav-menu {
-    display: none;
+    max-height: 0px;
     background-color: $mediumBlue;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
 
     & div.wrapper {
       @include flexCenter;
+      // transition: max-height 0.2s ease-out;
     }
 
     & ul {

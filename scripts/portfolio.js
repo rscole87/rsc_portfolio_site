@@ -7,6 +7,19 @@ let closeBttns = document.getElementsByClassName("close")
 let projectThumbs = document.getElementsByClassName("project-thumb")
 let projectTemplate = document.getElementById("project-template")
 let projectThumbTemplate = document.getElementById("project-thumb-template")
+const nav = document.getElementById("main-nav")
+
+mobileMenuBttn.addEventListener("click", () => {
+  slideIn(mobileMenu)
+})
+
+const slideIn = (element) => {
+  if (element.style.maxHeight === "0px" || (element.style.maxHeight !== null && element.style.maxHeight !== "220px")) {
+    element.style.maxHeight = "220px"
+  } else {
+    element.style.maxHeight = "0px"
+  }
+}
 
 const closeModal = (e) => {
   if (e.target.parentElement.parentElement.classList.contains("modal")) {
@@ -22,7 +35,7 @@ const toggleVisability = (element) => {
   }
 }
 
-mobileMenuBttn.addEventListener("click", () => toggleVisability(mobileMenu))
+// mobileMenuBttn.addEventListener("click", () => toggleVisability(mobileMenu))
 
 const displayProject = (projectId) => {
   let selectedProject
