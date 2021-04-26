@@ -116,6 +116,10 @@
   #contact-section {
     padding-top: 100px;
 
+    & #form-div {
+      padding: 0 0 40px 0;
+    }
+
     & #contact-menu-div {
       display: flex;
       justify-content: space-around;
