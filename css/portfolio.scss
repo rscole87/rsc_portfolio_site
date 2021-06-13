@@ -82,21 +82,21 @@ html {
       color: $mediumBlue;
     }
 
-    #headshot-div{
-      img{
+    #headshot-div {
+      img {
         max-width: 50%;
         border-radius: 10px;
         box-shadow: 2px 2px 10px 2px #00000077;
       }
 
       @media only screen and (max-width: 575px) {
-        img{
+        img {
           max-width: 40%;
         }
       }
     }
   }
-  
+
   #stack-div {
     background-color: $mediumBlue;
     border: 5px solid $darkBlue;
@@ -106,9 +106,13 @@ html {
 
     #stack-icon-div {
       max-height: 25vh;
+      padding-bottom: 30px;
+
+      .stack-icon {
+        max-height: 80px;
+      }
     }
   }
-
 }
 
 #projects-section {
@@ -277,7 +281,7 @@ html {
 }
 
 .body-copy {
-  font-size: 16px;
+  font-size: 1.1em;
   line-height: 1.8;
   text-overflow: ellipsis;
   max-width: 500px;
@@ -285,6 +289,10 @@ html {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  @media only screen and (max-width: 575px) {
+    font-size: 0.9em;
+  }
 }
 
 .project-description {
