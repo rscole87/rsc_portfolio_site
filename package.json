@@ -1,0 +1,44 @@
+{
+  "name": "rsc_portfolio",
+  "version": "2.0.0",
+  "description": "R. Coleman Portfolio Site",
+  "main": "index.html",
+  "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin images/* -o dist/images",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rscole87/rsc_portfolio_site.git"
+  },
+  "author": "Rodrick Coleman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rscole87/rsc_portfolio_site/issues"
+  },
+  "homepage": "https://github.com/rscole87/rsc_portfolio_site#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "font-awesome": "^4.7.0",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "imagemin-cli": "^6.0.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^6.0.0",
+    "onchange": "^7.1.0",
+    "parallelshell": "^3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
+  }
+}
