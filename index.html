@@ -7,25 +7,27 @@
         <title>Rodrick Coleman | Web Developer</title>
         <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
         <!-- build:css css/main.css -->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/portfolio.css">
         <link href="./node_modules/aos/dist/aos.css" rel="stylesheet">
         <!-- endbuild -->
+        
     </head>
 
     <body>
 
-        <section id="home-section" class="hero">
-            <div class="wrapper">
-                <div id="home-image-container">
-                  <img src="./images/Full_Branding_WHITE-01.svg" alt="Rodrick Coleman, Web Developer">
+        <section id="header-section">
+            <div class="container">
+                <div id="header-image-container">
+                  <img class="mx-auto d-block" src="./images/Full_Branding_WHITE-01.svg" alt="Rodrick Coleman, Web Developer">
                 </div>
             </div>
         </section>
 
-        <nav id="main-nav" class="navbar navbar-expand-lg">
+        <nav id="main-nav" class="navbar navbar-expand-sm navbar-dark">
             <div class="wrapper container-fluid container-xl">
                 <a href="#" class="navbar-brand"><img src="./images/Logo_WHITE-01.svg" id="logo" alt="rsc-logo" width="30" height="24"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav-inner" aria-controls="main-nav-inner" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav-inner">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -39,9 +41,8 @@
             </div>
         </nav>
 
-
-        <section id="about-section" class="half-hero">
-            <div class="wrapper">
+        <section id="about-section" class="">
+            <div class="container">
                 <div class="heading-div">
                     <h3 class="heading-medium">About Me</h3>
                 </div>
@@ -79,8 +80,8 @@
             </div>
         </section>
 
-        <section id="projects-section" class="flex-hero">
-            <div id="projects-div" class="wrapper">
+        <section id="projects-section" class="">
+            <div id="projects-div" class="container">
                 <div class="heading-div">
                     <h3 class="heading-medium">Projects</h3>
                 </div>
@@ -129,8 +130,8 @@
             </div>
         </template>
 
-        <section id="contact-section">
-            <div class="wrapper">
+        <section id="contact-section" class="">
+            <div class="container">
                 <div class="heading-div">
                     <h3 class="heading-medium">Contact Me</h3>
                 </div>
@@ -198,6 +199,9 @@
         </footer>
 
         <!-- build:js js/main.js -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="./scripts/portfolio.js" type="module" async></script>
         <script src="./node_modules/aos/dist/aos.js"></script>
         <script>
