@@ -2,9 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 @import "./variables";
 @import "./mixins";
-@import "./mobile";
-@import "./tablet";
-@import "./desktop";
 @import "./projects";
 
 body {
@@ -26,7 +23,7 @@ html {
   background-color: $midnightBlue;
   position: sticky;
   top: 0;
-  @include flexRow;
+  // @include flexRow;
   align-items: center;
 
   & div.wrapper {
@@ -347,7 +344,6 @@ html {
 .project-description {
   color: $lightBlue;
   margin-top: 10px;
-  // max-width: 80%;
 }
 
 footer {
@@ -380,16 +376,4 @@ footer {
       letter-spacing: 4px;
     }
   }
-}
-
-@media only screen and (max-width: 500px) {
-  @include mobileStyle;
-}
-
-@media only screen and (min-width: 501px) {
-  @include tabletStyle;
-}
-
-@media only screen and (min-width: 1025px) {
-  @include desktopStyle;
 }
