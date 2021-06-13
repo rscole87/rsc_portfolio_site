@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/rscole87/rsc_portfolio_site#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.0.1",
     "font-awesome": "^4.7.0",
     "popper.js": "^1.16.1"
