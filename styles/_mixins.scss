@@ -1,0 +1,97 @@
+@mixin raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+@mixin opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+@mixin flexContainer {
+  display: flex;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin heading {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+@mixin sectionHeading {
+  @include heading;
+  color: $lightBlue;
+  padding-top: 50px;
+  margin: 0px;
+  font-size: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin fullHero {
+  height: 100vh;
+}
+
+@mixin halfHero {
+  min-height: 50vh;
+}
+
+@mixin flexHero {
+  min-height: 100vh;
+}
+
+@mixin bttnStyle {
+  a.code-bttn {
+    text-decoration: none;
+    background-color: $lightBlue;
+    border: 1px solid $darkBlue;
+    border-radius: 5px;
+    cursor: pointer;
+    @include raleway;
+    color: $darkBlue;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px;
+    transition-duration: 300ms;
+  }
+
+  & a.code-bttn:hover {
+    background-color: $darkBlue;
+    border: 1px solid $lightBlue;
+    color: $lightBlue;
+  }
+}
+
+@mixin formInput {
+  & input[type="text"] {
+    @include opensans;
+    background-color: $midnightBlue;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px $lightBlue;
+  }
+
+  & textarea {
+    @include opensans;
+    width: 100%;
+    height: 150px;
+    margin: 8px 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px $lightBlue;
+    background-color: $midnightBlue;
+    resize: none;
+  }
+}

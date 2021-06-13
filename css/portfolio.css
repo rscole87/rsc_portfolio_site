@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800isplay=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400isplay=swap");
 #project1 {
   background-image: url(../images/projects/base_apparel.png);
   background-size: cover; }
@@ -57,24 +57,24 @@ html {
 
 #header-section {
   background: radial-gradient(circle, #1F5F82, #124663);
-  height: 100vh;
-  /* Safari 4.0 - 8.0 */
-  /* Firefox < 16 */
-  /* Safari, Chrome and Opera > 12.1 */ }
+  height: 100vh; }
   #header-section #header-image-container {
-    padding: 20% 0 0 0; }
-  #header-section img {
-    max-width: 450px;
-    height: auto;
-    -webkit-animation: fadein 2s;
-    /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s;
+    padding: 30vh 0 0 0;
+    /* Safari 4.0 - 8.0 */
     /* Firefox < 16 */
-    -ms-animation: fadein 2s;
-    /* Internet Explorer */
-    -o-animation: fadein 2s;
-    /* Opera < 12.1 */
-    animation: fadein 2s; }
+    /* Safari, Chrome and Opera > 12.1 */ }
+    #header-section #header-image-container img {
+      max-width: 450px;
+      height: auto;
+      -webkit-animation: fadein 2s;
+      /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s;
+      /* Firefox < 16 */
+      -ms-animation: fadein 2s;
+      /* Internet Explorer */
+      -o-animation: fadein 2s;
+      /* Opera < 12.1 */
+      animation: fadein 2s; }
 
 @keyframes fadein {
   from {
@@ -96,30 +96,30 @@ html {
 
 #about-section {
   background-color: #124663; }
-  #about-section div.wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    #about-section div.wrapper #about-content-div {
-      justify-content: center; }
-    #about-section div.wrapper .pull-quote {
-      font-family: "Raleway", sans-serif;
-      margin: 5px 0 0 0;
-      font-weight: 800;
-      color: #4588A5; }
-    #about-section div.wrapper #stack-div {
-      background-color: #4588A5;
-      border: 5px solid #1F5F82; }
-    #about-section div.wrapper #stack-icon-div {
-      max-height: 10vh;
-      padding: 0 20%;
-      display: flex;
-      justify-content: space-around;
-      padding-bottom: 30px; }
+  #about-section #about-content-div .pull-quote {
+    font-family: "Raleway", sans-serif;
+    margin: 5px 0 0 0;
+    font-weight: 800;
+    color: #4588A5; }
+  #about-section #about-content-div #headshot-div img {
+    max-width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px #00000077; }
+  @media only screen and (max-width: 575px) {
+    #about-section #about-content-div #headshot-div img {
+      max-width: 40%; } }
+  #about-section #stack-div {
+    background-color: #4588A5;
+    border: 5px solid #1F5F82;
+    border-radius: 20px;
+    top: 75px;
+    max-width: 90%; }
+    #about-section #stack-div #stack-icon-div {
+      max-height: 25vh; }
 
 #projects-section {
   background-color: #1F5F82;
-  padding-bottom: 30px; }
+  padding: 100px 0 30px 0; }
   #projects-section #call-to-action-div {
     display: flex;
     flex-direction: column;
