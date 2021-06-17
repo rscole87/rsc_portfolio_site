@@ -134,28 +134,45 @@ html {
       color: #CDEEFF;
       max-width: 80%;
       padding: 0 0 30px 0; }
-
-.project-thumb {
-  background-color: #CDEEFF;
-  width: 500px;
-  height: 300px;
-  flex-grow: 1;
-  margin: 10px;
-  box-shadow: 2px 2px 10px 2px #00000077;
-  transition: 0.5s;
-  border-radius: 5px; }
-
-.project-thumb:hover {
-  cursor: pointer;
-  box-shadow: none;
-  transform: scale(1.05); }
-
-#projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 10px;
-  margin-top: 30px; }
+  #projects-section #projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 30px; }
+  #projects-section .project-thumb {
+    background-color: #CDEEFF;
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 200px;
+    max-height: 350px;
+    flex-grow: 1;
+    margin: 10px;
+    box-shadow: 2px 2px 10px 2px #00000077;
+    transition: 0.5s;
+    border-radius: 5px; }
+    @media only screen and (min-width: 768px) {
+      #projects-section .project-thumb {
+        min-width: 250px;
+        max-width: 400px;
+        min-height: 200px;
+        max-height: 350px; } }
+    @media only screen and (min-width: 992px) {
+      #projects-section .project-thumb {
+        min-width: 400px;
+        max-width: 650px;
+        min-height: 300px;
+        max-height: 400px; } }
+    @media only screen and (min-width: 1200px) {
+      #projects-section .project-thumb {
+        min-width: 500px;
+        max-width: 650px;
+        min-height: 350px;
+        max-height: 450px; } }
+    #projects-section .project-thumb:hover {
+      cursor: pointer;
+      box-shadow: none;
+      transform: scale(1.05); }
 
 #contact-section {
   background-color: #124663;
