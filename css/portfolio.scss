@@ -119,21 +119,6 @@ html {
   background-color: $darkBlue;
   padding: 100px 0 30px 0;
 
-  #call-to-action-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 5px solid $midnightBlue;
-
-    .body-copy {
-      margin: 0 auto;
-      text-align: center;
-      color: $lightBlue;
-      max-width: 80%;
-      padding: 0 0 30px 0;
-    }
-  }
-
   #projects-grid {
     display: flex;
     flex-wrap: wrap;
@@ -181,11 +166,31 @@ html {
       transform: scale(1.05);
     }
   }
+
+  #call-to-action-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $mediumBlue;
+    border: 5px solid $midnightBlue;
+    border-radius: 20px;
+    top: 75px;
+    max-width: 90%;
+
+    .body-copy {
+      margin: 0 auto;
+      text-align: center;
+      color: $lightBlue;
+      max-width: 80%;
+      padding: 0 0 30px 0;
+    }
+  }
+
 }
 
 #contact-section {
   background-color: $midnightBlue;
-  padding-bottom: 50px;
+  padding: 75px 0 50px 0;
   ::placeholder {
     // @include montserrat;
     @include opensans;

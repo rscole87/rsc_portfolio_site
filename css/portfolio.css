@@ -123,17 +123,6 @@ html {
 #projects-section {
   background-color: #1F5F82;
   padding: 100px 0 30px 0; }
-  #projects-section #call-to-action-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 5px solid #124663; }
-    #projects-section #call-to-action-div .body-copy {
-      margin: 0 auto;
-      text-align: center;
-      color: #CDEEFF;
-      max-width: 80%;
-      padding: 0 0 30px 0; }
   #projects-section #projects-grid {
     display: flex;
     flex-wrap: wrap;
@@ -173,10 +162,25 @@ html {
       cursor: pointer;
       box-shadow: none;
       transform: scale(1.05); }
+  #projects-section #call-to-action-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #4588A5;
+    border: 5px solid #124663;
+    border-radius: 20px;
+    top: 75px;
+    max-width: 90%; }
+    #projects-section #call-to-action-div .body-copy {
+      margin: 0 auto;
+      text-align: center;
+      color: #CDEEFF;
+      max-width: 80%;
+      padding: 0 0 30px 0; }
 
 #contact-section {
   background-color: #124663;
-  padding-bottom: 50px; }
+  padding: 75px 0 50px 0; }
   #contact-section ::placeholder {
     font-family: "Open Sans", sans-serif;
     color: #FFFEFD; }
