@@ -198,7 +198,7 @@ html {
   }
 
   #form-div {
-    margin: 30px auto 0px auto;
+    margin: 30px 0 0 0;
     .input-div {
       width: 800px;
       max-width: 100%;
@@ -208,7 +208,7 @@ html {
       background-color: $darkBlue;
       padding: 10px;
       margin: 0 auto;
-      width: 70%;
+      // width: 70%;
       max-width: 700px;
       #submit-bttn-div {
         margin: 0 auto;
@@ -231,6 +231,13 @@ html {
       color: $mediumBlue;
       background: $lightBlue;
       box-shadow: none;
+    }
+  }
+
+  #contact-menu-div{
+    padding: 50px 0 0 0;
+    .social-media-icon{
+      max-height: 80px;
     }
   }
 }
@@ -335,14 +342,7 @@ footer {
   padding-top: 30px;
 
   #footer-container {
-    flex-direction: row;
-    display: flex;
-    flex-wrap: nowrap;
-
-    div {
-      flex: 1;
-      min-height: 200px;
-    }
+    padding: 0 0 50px 0;
   }
 
   .footer-heading {
