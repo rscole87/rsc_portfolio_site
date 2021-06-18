@@ -75,11 +75,10 @@
 @mixin formInput {
   & input[type="text"] {
     @include opensans;
+    color: $lightBlue;
     background-color: $midnightBlue;
-    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    box-sizing: border-box;
     border: 1px $lightBlue;
   }
 
@@ -89,7 +88,6 @@
     height: 150px;
     margin: 8px 0;
     padding: 12px 20px;
-    box-sizing: border-box;
     border: 1px $lightBlue;
     background-color: $midnightBlue;
     resize: none;

@@ -66,7 +66,7 @@
 
                 <div id="stack-div" class="row position-relative mx-auto" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                     <div class="heading-div col-12 text-center">
-                        <h2>My Stack</h2>
+                        <h3 class="font-light">My Stack</h3>
                     </div>
                     <div id="stack-icon-div" class="col-12 d-flex flex-wrap">
                         <div class="col-4 col-sm-2 py-2">
@@ -104,7 +104,7 @@
 
             <div id="call-to-action-div" class="row position-relative mx-auto"" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
                 <div class="heading-div col-12 text-center">
-                    <h2>Like what you see?</h2>
+                    <h3 class="font-light">Like what you see?</h3>
                 </div>
                 <div>
                     <p class="body-copy">
@@ -154,14 +154,22 @@
                 </div>
 
                 <div id="form-div">
-                    <form id="contact-form" name="contact-form" method="POST" data-netlify="true">
-                        <input name="f_name" type="text" placeholder="First Name">
-                        <input name="l_name" type="text" placeholder="Last Name">
-                        <input name="email" type="text" placeholder="Email Address">
-                        <textarea name="message" cols="30" rows="10"
-                            placeholder="Your message:"></textarea>
-                        <div id="submit-bttn-div">
-                            <input id="submit" type="submit" value="Submit">
+                    <form id="contact-form" class="row" name="contact-form" method="POST" data-netlify="true">
+                        <div class="col-12 col-sm-6">
+                            <input class="form-control" name="f_name" type="text" placeholder="First Name">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input class="form-control" name="l_name" type="text" placeholder="Last Name">
+                        </div>
+                        <div class="col-12">
+                            <input class="form-control" name="email" type="text" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        </div>
+                        
+                        <div id="submit-bttn-div" class="col-4">
+                            <input class="btn" id="submit" type="submit" value="Submit">
                         </div>
                     </form>
                 </div>

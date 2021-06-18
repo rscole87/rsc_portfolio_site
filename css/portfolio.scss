@@ -15,11 +15,22 @@ html {
 
 #main-nav {
   background-color: $midnightBlue;
+
+  .navbar-nav {
+    @media only screen and (max-width: 575px) {
+      background-color: $mediumBlue;
+    }
+  }
 }
 
 .heading-div {
   @include sectionHeading;
   padding-top: 30px;
+}
+
+.font-light {
+  @include raleway;
+  font-weight: 300;
 }
 
 #header-section {
@@ -37,6 +48,10 @@ html {
       -ms-animation: fadein 2s; /* Internet Explorer */
       -o-animation: fadein 2s; /* Opera < 12.1 */
       animation: fadein 2s;
+
+      @media only screen and (max-width: 575px) {
+        max-width: 80%;
+      }
     }
 
     /* Safari 4.0 - 8.0 */
@@ -100,7 +115,7 @@ html {
   #stack-div {
     background-color: $mediumBlue;
     border: 5px solid $darkBlue;
-    border-radius: 20px;
+    border-radius: 50px;
     top: 75px;
     max-width: 90%;
 
@@ -173,8 +188,8 @@ html {
     justify-content: center;
     background-color: $mediumBlue;
     border: 5px solid $midnightBlue;
-    border-radius: 20px;
-    top: 75px;
+    border-radius: 50px;
+    top: 100px;
     max-width: 90%;
 
     .body-copy {
@@ -185,58 +200,66 @@ html {
       padding: 0 0 30px 0;
     }
   }
-
 }
 
 #contact-section {
   background-color: $midnightBlue;
-  padding: 75px 0 50px 0;
-  ::placeholder {
-    // @include montserrat;
-    @include opensans;
-    color: $white;
-  }
-
+  padding: 100px 0 50px 0;
+  
   #form-div {
     margin: 30px 0 0 0;
     .input-div {
       width: 800px;
       max-width: 100%;
     }
+
     form {
       @include formInput;
       background-color: $darkBlue;
+      border-radius: 5px;
       padding: 10px;
       margin: 0 auto;
-      // width: 70%;
       max-width: 700px;
+
+      label{
+        color: $lightBlue;
+      }
+
+      ::placeholder {
+        // @include montserrat;
+        @include opensans;
+        color: $lightBlue;
+      }
+    
+
       #submit-bttn-div {
         margin: 0 auto;
-        width: 50%;
+
+        #submit {
+          cursor: pointer;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: $lightBlue;
+          transition-duration: 300ms;
+          box-shadow: 0px 4px $midnightBlue;
+          padding: 5px;
+          width: 100%;
+          border: 1px solid $lightBlue;
+          background-color: transparent;
+
+          &:hover {
+            color: $mediumBlue;
+            background: $lightBlue;
+            box-shadow: none;
+          }
+        }
       }
-    }
-    #submit {
-      cursor: pointer;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: $lightBlue;
-      transition-duration: 300ms;
-      box-shadow: 0px 4px $midnightBlue;
-      padding: 5px;
-      width: 100%;
-      border: 1px solid $lightBlue;
-      background-color: transparent;
-    }
-    #submit:hover {
-      color: $mediumBlue;
-      background: $lightBlue;
-      box-shadow: none;
     }
   }
 
-  #contact-menu-div{
+  #contact-menu-div {
     padding: 50px 0 0 0;
-    .social-media-icon{
+    .social-media-icon {
       max-height: 80px;
     }
   }

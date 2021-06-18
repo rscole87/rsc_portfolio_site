@@ -41,6 +41,9 @@ html {
 
 #main-nav {
   background-color: #124663; }
+  @media only screen and (max-width: 575px) {
+    #main-nav .navbar-nav {
+      background-color: #4588A5; } }
 
 .heading-div {
   font-weight: 300;
@@ -54,6 +57,10 @@ html {
   -moz-appearance: none;
   appearance: none;
   padding-top: 30px; }
+
+.font-light {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300; }
 
 #header-section {
   background: radial-gradient(circle, #1F5F82, #124663);
@@ -75,6 +82,9 @@ html {
       -o-animation: fadein 2s;
       /* Opera < 12.1 */
       animation: fadein 2s; }
+      @media only screen and (max-width: 575px) {
+        #header-section #header-image-container img {
+          max-width: 80%; } }
 
 @keyframes fadein {
   from {
@@ -111,7 +121,7 @@ html {
   #about-section #stack-div {
     background-color: #4588A5;
     border: 5px solid #1F5F82;
-    border-radius: 20px;
+    border-radius: 50px;
     top: 75px;
     max-width: 90%; }
     #about-section #stack-div #stack-icon-div {
@@ -168,8 +178,8 @@ html {
     justify-content: center;
     background-color: #4588A5;
     border: 5px solid #124663;
-    border-radius: 20px;
-    top: 75px;
+    border-radius: 50px;
+    top: 100px;
     max-width: 90%; }
     #projects-section #call-to-action-div .body-copy {
       margin: 0 auto;
@@ -180,10 +190,7 @@ html {
 
 #contact-section {
   background-color: #124663;
-  padding: 75px 0 50px 0; }
-  #contact-section ::placeholder {
-    font-family: "Open Sans", sans-serif;
-    color: #FFFEFD; }
+  padding: 100px 0 50px 0; }
   #contact-section #form-div {
     margin: 30px 0 0 0; }
     #contact-section #form-div .input-div {
@@ -191,16 +198,16 @@ html {
       max-width: 100%; }
     #contact-section #form-div form {
       background-color: #1F5F82;
+      border-radius: 5px;
       padding: 10px;
       margin: 0 auto;
       max-width: 700px; }
       #contact-section #form-div form input[type="text"] {
         font-family: "Open Sans", sans-serif;
+        color: #CDEEFF;
         background-color: #124663;
-        width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
-        box-sizing: border-box;
         border: 1px #CDEEFF; }
       #contact-section #form-div form textarea {
         font-family: "Open Sans", sans-serif;
@@ -208,28 +215,31 @@ html {
         height: 150px;
         margin: 8px 0;
         padding: 12px 20px;
-        box-sizing: border-box;
         border: 1px #CDEEFF;
         background-color: #124663;
         resize: none; }
+      #contact-section #form-div form label {
+        color: #CDEEFF; }
+      #contact-section #form-div form ::placeholder {
+        font-family: "Open Sans", sans-serif;
+        color: #CDEEFF; }
       #contact-section #form-div form #submit-bttn-div {
-        margin: 0 auto;
-        width: 50%; }
-    #contact-section #form-div #submit {
-      cursor: pointer;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: #CDEEFF;
-      transition-duration: 300ms;
-      box-shadow: 0px 4px #124663;
-      padding: 5px;
-      width: 100%;
-      border: 1px solid #CDEEFF;
-      background-color: transparent; }
-    #contact-section #form-div #submit:hover {
-      color: #4588A5;
-      background: #CDEEFF;
-      box-shadow: none; }
+        margin: 0 auto; }
+        #contact-section #form-div form #submit-bttn-div #submit {
+          cursor: pointer;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: #CDEEFF;
+          transition-duration: 300ms;
+          box-shadow: 0px 4px #124663;
+          padding: 5px;
+          width: 100%;
+          border: 1px solid #CDEEFF;
+          background-color: transparent; }
+          #contact-section #form-div form #submit-bttn-div #submit:hover {
+            color: #4588A5;
+            background: #CDEEFF;
+            box-shadow: none; }
   #contact-section #contact-menu-div {
     padding: 50px 0 0 0; }
     #contact-section #contact-menu-div .social-media-icon {
