@@ -1,25 +1,11 @@
 import projectList from "./projectList.js"
 let projectsDiv = document.getElementById("projects-div")
 let projectsGrid = document.getElementById("projects-grid")
-// let mobileMenuBttn = document.getElementById("menu-button")
-// let mobileMenu = document.getElementById("mobile-nav-menu")
 let closeBttns = document.getElementsByClassName("close")
 let projectThumbs = document.getElementsByClassName("project-thumb")
 let projectTemplate = document.getElementById("project-template")
 let projectThumbTemplate = document.getElementById("project-thumb-template")
-// const nav = document.getElementById("main-nav")
 
-// mobileMenuBttn.addEventListener("click", () => {
-//   slideIn(mobileMenu)
-// })
-
-const slideIn = (element) => {
-  if (element.style.maxHeight === "0px" || (element.style.maxHeight !== null && element.style.maxHeight !== "220px")) {
-    element.style.maxHeight = "220px"
-  } else {
-    element.style.maxHeight = "0px"
-  }
-}
 
 const closeModal = (e) => {
   if (e.target.parentElement.parentElement.classList.contains("modal")) {
@@ -76,7 +62,7 @@ const populateAllProjects = () => {
   })
 }
 
-populateAllProjects()
+// populateAllProjects()
 
 Array.from(projectThumbs).forEach((ele) => {
   ele.addEventListener("click", () => {
