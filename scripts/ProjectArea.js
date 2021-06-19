@@ -1,7 +1,6 @@
-'use strict';
+import React from "react";
 import projectList from "./projectList";
 import Project from "./Project";
-const e = React.createElement;
 
 class ProjectArea extends React.Component {
   constructor(props) {
@@ -11,7 +10,7 @@ class ProjectArea extends React.Component {
 
   render() {
     const displayedProjects = this.state.projectList.map(project => {
-        <Project  
+        <Project
             id={project.id}
             name={project.name}
             description={project.description}
@@ -24,11 +23,13 @@ class ProjectArea extends React.Component {
 
     return (
       <div>
-          {displayedProjects}
+        <h1>Rendered</h1>
       </div>
     );
   }
 }
 
-const domContainer = document.querySelector('#projects-grid');
-ReactDOM.render(e(ProjectArea), domContainer);
+export default ProjectArea;
+
+const domContainer = document.querySelector("#projects-grid");
+// ReactDOM.render(<ProjectArea />, domContainer);

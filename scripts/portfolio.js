@@ -62,7 +62,7 @@ const populateAllProjects = () => {
   })
 }
 
-// populateAllProjects()
+populateAllProjects();
 
 Array.from(projectThumbs).forEach((ele) => {
   ele.addEventListener("click", () => {
