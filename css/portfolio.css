@@ -44,6 +44,10 @@ html {
   @media only screen and (max-width: 575px) {
     #main-nav .navbar-nav {
       background-color: #4588A5; } }
+  #main-nav li {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.25em; }
 
 .heading-div {
   font-weight: 300;
@@ -353,6 +357,11 @@ footer {
     color: #CDEEFF;
     margin-top: 0px;
     padding-top: 30px; }
-  footer #footer-menu li {
-    text-transform: uppercase;
-    letter-spacing: 4px; }
+  footer #footer-menu {
+    list-style: none; }
+    footer #footer-menu .my-nav-link {
+      text-transform: uppercase;
+      font-size: 1em;
+      letter-spacing: 0.25em;
+      text-decoration: none;
+      color: #CDEEFF; }

@@ -21,6 +21,12 @@ html {
       background-color: $mediumBlue;
     }
   }
+
+  li {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+  }
 }
 
 .heading-div {
@@ -117,7 +123,6 @@ html {
     border: 5px solid $darkBlue;
     border-radius: 50px;
     top: 75px;
-    
 
     #stack-icon-div {
       max-height: 25vh;
@@ -204,7 +209,7 @@ html {
 #contact-section {
   background-color: $midnightBlue;
   padding: 100px 0 50px 0;
-  
+
   #form-div {
     margin: 30px 0 0 0;
     .input-div {
@@ -220,7 +225,7 @@ html {
       margin: 0 auto;
       max-width: 700px;
 
-      label{
+      label {
         color: $lightBlue;
       }
 
@@ -229,7 +234,6 @@ html {
         @include opensans;
         color: $lightBlue;
       }
-    
 
       #submit-bttn-div {
         margin: 0 auto;
@@ -375,9 +379,14 @@ footer {
   }
 
   #footer-menu {
-    li {
+    list-style: none;
+
+    .my-nav-link {
       text-transform: uppercase;
-      letter-spacing: 4px;
+      font-size: 1em;
+      letter-spacing: 0.25em;
+      text-decoration: none;
+      color: $lightBlue;
     }
   }
 }
