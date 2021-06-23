@@ -17,7 +17,7 @@
         <section id="header-section">
             <div class="container">
                 <div id="header-image-container">
-                  <img class="mx-auto d-block" src="./images/Full_Branding_WHITE-01.svg" alt="Rodrick Coleman, Web Developer">
+                  <img class="mx-auto d-block" src="./images/Full_Branding_WHITE-01.svg" alt="Rodrick Coleman, Web Developer" />
                 </div>
             </div>
         </section>
@@ -112,73 +112,10 @@
                     </p>
                 </div>
             </div>
-
-            <div id="project-modal" class="modal fade" tabindex="-1" aria-labelledby="project-modal" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div id="project-modal-inner" class="modal-body col">
-                      <div class="modal-content">
-                        <h4 class="project-name" id="active-project-name"></h4>
-                        <div class="modal-column-container">
-                            <div class="modal-img-column">
-                                <!-- <img class="project-img" src="" alt="" project-img> -->
-                                <video class="project-vid" id="active-project-video" project-vid controls loop autoplay webkit-playsinline playsinline>
-                                    <source src="" type="video/mp4">
-                                  Your browser does not support the video tag.
-                                </video>
-                            </div>
-            
-                            <div class="modal-description-column">
-                                
-                                <p class="project-description" id="active-project-description" project-description></p>
-            
-                                <div class="modal-bttn-container">
-                                    <a class="code-bttn" id="active-project-demo">Live Code</a>
-                                    <a class="code-bttn" id="active-project-github">Source Code</a>
-                                </div>
-        
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
         </section>
 
         <template id="project-thumb-template">
-            <a href="" data-bs-toggle="modal" data-bs-target="#project-modal">
-                <div project-id class="project-thumb" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"></div>
-            </a>
-        </template>
-
-        <template id="project-template">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h4 class="project-name" project-name></h4>
-
-                <div class="modal-column-container">
-                    <div class="modal-img-column">
-                        <!-- <img class="project-img" src="" alt="" project-img> -->
-                        
-                        <video class="project-vid" project-vid controls loop autoplay webkit-playsinline playsinline>
-                            <source src="" type="video/mp4">
-                          Your browser does not support the video tag.
-                        </video>
-                    </div>
-    
-                    <div class="modal-description-column">
-                        
-                        <p class="project-description" project-description></p>
-    
-                        <div class="modal-bttn-container">
-                            <a class="code-bttn" demo>Live Code</a>
-                            <a class="code-bttn" github>Source Code</a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            <div project-id data-bs-toggle="modal" data-bs-target="#project-modal" class="project-thumb" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"></div>
         </template>
 
         <section id="contact-section" class="">
@@ -232,19 +169,6 @@
         </section>
 
 
-
-        <!-- The Modal -->
-        <div id="submission-modal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h4>Thank you for your submission!</h4>
-                <p>I will follow up on your inquiry shortly.</p>
-            </div>
-
-        </div>
-
         <footer>
             <div class="container">
                 <div id="footer-container" class="row">
@@ -263,6 +187,34 @@
                 </div>
             </div>
         </footer>
+
+        <div id="project-modal" class="modal fade" tabindex="-1" aria-labelledby="project-modal" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                    <h4 class="project-name" id="active-project-name"></h4>
+                    <div class="modal-column-container">
+                        <div class="modal-img-column">
+                            <!-- <img class="project-img" src="" alt="" project-img> -->
+                            <video class="project-vid" id="active-project-video" project-vid controls loop autoplay webkit-playsinline playsinline>
+                                <!-- <source src="" type="video/mp4"> -->
+                              Your browser does not support the video tag.
+                            </video>
+                        </div>
+        
+                        <div class="modal-description-column">
+                            
+                            <p class="project-description" id="active-project-description" project-description></p>
+        
+                            <div class="modal-bttn-container">
+                                <a class="code-bttn" id="active-project-demo">Live Code</a>
+                                <a class="code-bttn" id="active-project-github">Source Code</a>
+                            </div>
+    
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
 
         <!-- build:js js/main.js -->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
