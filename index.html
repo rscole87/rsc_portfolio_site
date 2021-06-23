@@ -112,10 +112,44 @@
                     </p>
                 </div>
             </div>
+
+            <div id="project-modal" class="modal fade" tabindex="-1" aria-labelledby="project-modal" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div id="project-modal-inner" class="modal-body col">
+                      <div class="modal-content">
+                        <h4 class="project-name" id="active-project-name"></h4>
+                        <div class="modal-column-container">
+                            <div class="modal-img-column">
+                                <!-- <img class="project-img" src="" alt="" project-img> -->
+                                <video class="project-vid" id="active-project-video" project-vid controls loop autoplay webkit-playsinline playsinline>
+                                    <source src="" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                </video>
+                            </div>
+            
+                            <div class="modal-description-column">
+                                
+                                <p class="project-description" id="active-project-description" project-description></p>
+            
+                                <div class="modal-bttn-container">
+                                    <a class="code-bttn" id="active-project-demo">Live Code</a>
+                                    <a class="code-bttn" id="active-project-github">Source Code</a>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
 
         <template id="project-thumb-template">
-            <div project-id class="project-thumb" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"></div>
+            <a href="" data-bs-toggle="modal" data-bs-target="#project-modal">
+                <div project-id class="project-thumb" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"></div>
+            </a>
         </template>
 
         <template id="project-template">

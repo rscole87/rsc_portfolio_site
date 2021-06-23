@@ -1,54 +1,8 @@
 import projectList from "./projectList.js"
-let projectsDiv = document.getElementById("projects-div")
 let projectsGrid = document.getElementById("projects-grid")
-let closeBttns = document.getElementsByClassName("close")
-let projectThumbs = document.getElementsByClassName("project-thumb")
 let projectTemplate = document.getElementById("project-template")
 let projectThumbTemplate = document.getElementById("project-thumb-template")
 
-
-const closeModal = (e) => {
-  if (e.target.parentElement.parentElement.classList.contains("modal")) {
-    toggleVisability(e.target.parentElement.parentElement)
-  }
-}
-
-const toggleVisability = (element) => {
-  if (element.style.display === "") {
-    element.style.display = "block"
-  } else {
-    element.style.display = ""
-  }
-}
-
-const displayProject = (projectId) => {
-  let selectedProject
-
-  projectList.forEach((project) => {
-    if (project.id == projectId) {
-      selectedProject = project
-    }
-  })
-
-  let modalDiv = document.createElement("div")
-  modalDiv.className = "modal"
-
-  modalDiv.appendChild(printProject(selectedProject))
-  projectsDiv.appendChild(modalDiv)
-
-  modalDiv.style.display = "block"
-}
-
-const printProject = (project) => {
-  let projectClone = document.importNode(projectTemplate.content, true)
-  projectClone.querySelector("[project-name]").innerText = project.name
-  projectClone.querySelector("[project-description]").innerText = project.description
-  // projectClone.querySelector("[project-img]").src = project.image
-  projectClone.querySelector("[project-vid]").src = project.video
-  projectClone.querySelector("[demo]").href = project.demo
-  projectClone.querySelector("[github]").href = project.github
-  return projectClone
-}
 
 const createProjectThumb = (project) => {
   let thumb = document.importNode(projectThumbTemplate.content, true)
@@ -64,18 +18,14 @@ const populateAllProjects = () => {
 
 populateAllProjects();
 
-Array.from(projectThumbs).forEach((ele) => {
-  ele.addEventListener("click", () => {
-    displayProject(ele.id)
+const projectThumbLinks = Array.from(document.getElementsByClassName("project-thumb"))
 
-    Array.from(closeBttns).forEach((bttn) => {
-      bttn.addEventListener("click", closeModal)
-    })
+projectThumbLinks.forEach(function (img) {
+  img.addEventListener("click", function () {
+    focusProject(img)
   })
 })
 
-window.onclick = function (event) {
-  if (event.target.classList.contains("modal")) {
-    toggleVisability(event.target)
-  }
+const focusProject = function (img) {
+  activeImage.src = img.src
 }
