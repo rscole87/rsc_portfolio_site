@@ -1,6 +1,5 @@
 import projectList from "./projectList.js"
 let projectsGrid = document.getElementById("projects-grid")
-let projectTemplate = document.getElementById("project-template")
 let projectThumbTemplate = document.getElementById("project-thumb-template")
 let activeProjectVideo = document.getElementById("active-project-video")
 let activeProjectName = document.getElementById("active-project-name")
